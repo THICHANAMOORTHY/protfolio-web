@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thichanamoorthy T | Embedded Systems &amp; FPGA Engineer</title>
+  <meta name="description" content="Portfolio of Thichanamoorthy T, a final-year ECE student building embedded systems with ESP32 and Embedded C, and digital hardware in Verilog on Artix-7 FPGAs.">
+  <meta name="author" content="Thichanamoorthy T">
+  <meta name="theme-color" content="#05080d">
+  <meta property="og:title" content="Thichanamoorthy T | Embedded Systems &amp; FPGA Engineer">
+  <meta property="og:description" content="Embedded systems, IoT, EV electronics, and FPGA design.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Three.js (hero only), loaded as an ES module from a CDN -->
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main">
+      <a href="#top" class="logo" aria-label="Home">
+        <span class="logo-bracket">&lt;</span>TT<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Expertise</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
+  <main>
+    <!-- ========== HERO (3D FPGA) ========== -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero-sticky">
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+        <!-- Shown when WebGL / Three.js is unavailable -->
+        <div class="chip-fallback" aria-hidden="true">
+          <div class="chip-fallback-body">
+            <span class="chip-fallback-label">ARTIX-7</span>
+            <span class="chip-fallback-part">XC7A35T</span>
+          </div>
+        </div>
+
+        <div class="hero-content container">
+          <p class="hero-kicker mono">// hello_world.v</p>
+          <h1 class="hero-title">Thichanamoorthy <span class="accent">T</span></h1>
+          <p class="hero-role mono">
+            <span class="prompt">&gt;</span>
+            <span id="typed" aria-live="polite"></span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="hero-sub">Final-year ECE student building embedded systems, from sensors and firmware on ESP32 to Verilog on Artix-7 FPGAs.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-microchip"></i> View My Work</a>
+            <a href="assets/Thichanamoorthy_T_Resume.pdf" class="btn btn-ghost" download><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+            <a href="#contact" class="btn btn-ghost"><i class="fa-solid fa-paper-plane"></i> Let's Connect</a>
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-hint mono" aria-label="Scroll to About">
+          <span>scroll to open the die</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+        <div class="hero-fade" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">01.</span> About Me</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a final-year <strong>B.E. Electronics and Communication Engineering</strong> student at
+              <strong>EASA College of Engineering and Technology (Autonomous)</strong>, Coimbatore, affiliated with Anna University.
+            </p>
+            <p>
+              <span class="hl">Embedded systems</span> are what I enjoy most. I build them with <span class="hl">ESP32</span>
+              and <span class="hl">Embedded C</span>: wiring up sensors over UART, I2C and SPI, driving displays, motors and I2S audio,
+              and getting real-time data to a dashboard. At my Emertxe internship I built an EV dashboard with ADAS warnings.
+            </p>
+            <p>
+              I also design digital hardware in <span class="hl">Verilog</span> and bring it up on <span class="hl">Artix-7 FPGAs</span>,
+              from RTL and testbenches to Python-based verification against reference models.
+              I'm currently looking for <strong>embedded systems</strong> and <strong>FPGA</strong> fresher roles.
+            </p>
+            <p class="edu mono">
+              <i class="fa-solid fa-graduation-cap"></i> B.E. ECE · 2023 – present · CGPA 7.99/10 (up to 6th semester)
+            </p>
+          </div>
+          <div class="about-card reveal">
+            <pre class="mono code-block" aria-label="Profile summary as code"><span class="kw">module</span> <span class="fn">thichanamoorthy</span> (
+  <span class="kw">input</span>  wire curiosity,
+  <span class="kw">input</span>  wire coffee,
+  <span class="kw">output</span> reg  [<span class="nb">7</span>:<span class="nb">0</span>] rtl,
+  <span class="kw">output</span> reg  fpga_bringup
+);
+  <span class="cm">// status: open to embedded &amp; FPGA roles</span>
+<span class="kw">endmodule</span></pre>
+          </div>
+        </div>
+
+        <ul class="stats" aria-label="Quick stats">
+          <li class="stat reveal"><span class="stat-num" data-count="12" id="repo-count">0</span><span class="stat-label">GitHub repos</span></li>
+          <li class="stat reveal"><span class="stat-num" data-count="2">0</span><span class="stat-label">Internships</span></li>
+          <li class="stat reveal"><span class="stat-num" data-count="6" data-suffix="+">0</span><span class="stat-label">Hackathon projects</span></li>
+          <li class="stat reveal"><span class="stat-num stat-text">Co-Chair</span><span class="stat-label">YUVA Club</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== EXPERTISE ========== -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">02.</span> Area of Expertise</h2>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-wifi"></i></div>
+            <h3>Embedded &amp; IoT</h3>
+            <ul class="tags">
+              <li><i class="devicon-c-plain"></i> Embedded C</li><li><i class="devicon-arduino-plain"></i> ESP32</li><li>NodeMCU ESP8266</li>
+              <li>UART · I2C · SPI</li><li>I2S audio</li><li>SPI TFT displays</li>
+              <li>MPU6050</li><li>DHT11/22</li><li>TDS &amp; pH sensors</li><li>L298N motor control</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-car-battery"></i></div>
+            <h3>EV &amp; Automotive</h3>
+            <ul class="tags">
+              <li>EV architecture</li><li>Li-ion battery packs</li><li>BMS</li><li>SOC / SOH</li><li>Cell balancing</li>
+              <li>Electric motors</li><li>Power electronics</li><li>EV charging</li><li>ADAS</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-microchip"></i></div>
+            <h3>RTL &amp; Digital Design</h3>
+            <ul class="tags">
+              <li>Verilog HDL</li><li>VHDL</li><li>Combinational &amp; sequential</li><li>FSMs</li><li>Pipelining</li>
+              <li>Fixed-point arithmetic</li><li>CORDIC</li><li>DDS</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-memory"></i></div>
+            <h3>FPGA</h3>
+            <ul class="tags">
+              <li>Xilinx Artix-7</li><li>Vivado 2019.2</li><li>UART interfacing</li><li>Line buffers</li><li>FIFOs</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-wave-square"></i></div>
+            <h3>Verification</h3>
+            <ul class="tags">
+              <li>Testbenches</li><li>Icarus Verilog</li><li>EDA Playground</li><li>Vivado behavioral sim</li>
+              <li><i class="devicon-python-plain"></i> Python reference models</li><li><i class="devicon-opencv-plain"></i> OpenCV</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>Tools</h3>
+            <ul class="tags">
+              <li><i class="devicon-git-plain"></i> Git</li><li><i class="devicon-github-original"></i> GitHub</li>
+              <li>Vivado</li><li>EDA Playground</li><li><i class="devicon-matlab-plain"></i> MATLAB</li><li>LTspice</li>
+              <li>EasyEDA (PCB)</li><li>LabVIEW</li><li><i class="devicon-pycharm-plain"></i> PyCharm</li><li>Overleaf</li><li><i class="devicon-latex-original"></i> LaTeX</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Software &amp; Web</h3>
+            <ul class="tags">
+              <li><i class="devicon-c-plain"></i> C</li><li><i class="devicon-python-plain"></i> Python</li><li><i class="devicon-flask-original"></i> Flask</li>
+              <li><i class="devicon-javascript-plain"></i> JavaScript</li><li><i class="devicon-react-original"></i> React</li>
+              <li><i class="devicon-nodejs-plain"></i> Node.js / Express</li><li><i class="devicon-firebase-plain"></i> Firebase</li>
+              <li><i class="devicon-sqlite-plain"></i> SQLite</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">03.</span> Projects</h2>
+
+        <div class="filters reveal" role="tablist" aria-label="Filter projects">
+          <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">All</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="iot">Embedded/IoT</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="vlsi">VLSI/FPGA</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="ai">AI</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="web">Web</button>
+        </div>
+        <p class="hint mono">Hover (or tap) a card to flip it.</p>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <article class="flip-card reveal" data-category="iot" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="badge badge-iot">IoT · Internship</span>
+                <i class="fa-solid fa-gauge-high proj-icon"></i>
+                <h3>EV Dashboard with ADAS Warning System</h3>
+                <p>Embedded dashboard for real-time vehicle parameter monitoring.</p>
+                <ul class="mini-tags"><li>Embedded C</li><li>Sensors</li><li>ADAS</li></ul>
+              </div>
+              <div class="flip-back">
+                <h3>How it works</h3>
+                <p>Built during the Emertxe internship. Sensors feed live vehicle parameters to the dashboard, and obstacle detection triggers ADAS-style warnings.</p>
+                <a class="card-link" href="https://github.com/THICHANAMOORTHY?tab=repositories&amp;q=ev" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card reveal" data-category="iot ai" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="badge badge-iot">IoT</span>
+                <i class="fa-solid fa-microphone-lines proj-icon"></i>
+                <h3>ESP32 Voice AI Assistant</h3>
+                <p>Push-to-talk voice assistant on an ESP32.</p>
+                <ul class="mini-tags"><li>INMP441</li><li>MAX98357A</li><li>I2S</li><li>LLM</li></ul>
+              </div>
+              <div class="flip-back">
+                <h3>How it works</h3>
+                <p>An INMP441 mic captures speech, which goes to cloud speech-to-text, an LLM, and ElevenLabs text-to-speech, then plays back through a MAX98357A amp. It's being tuned to answer questions about EASA College.</p>
+                <a class="card-link" href="https://github.com/THICHANAMOORTHY?tab=repositories&amp;q=voice" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card reveal" data-category="iot" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="badge badge-iot">IoT</span>
+                <i class="fa-brands fa-whatsapp proj-icon"></i>
+                <h3>WhatsApp-Based Smart Home Automation</h3>
+                <p>Monitor sensors and switch appliances from WhatsApp.</p>
+                <ul class="mini-tags"><li>ESP32</li><li>ThingSpeak</li><li>Twilio API</li></ul>
+              </div>
+              <div class="flip-back">
+                <h3>How it works</h3>
+                <p>An ESP32 pushes sensor readings to ThingSpeak Cloud. Commands sent over WhatsApp through the Twilio API control the appliances remotely.</p>
+                <a class="card-link" href="https://github.com/THICHANAMOORTHY?tab=repositories&amp;q=home" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card reveal" data-category="ai iot" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="badge badge-ai">AI + IoT · Final year</span>
+                <i class="fa-solid fa-car-battery proj-icon"></i>
+                <h3>AI-Based Adaptive Powertrain Management for HEVs</h3>
+                <p>Classifies driving style and picks EV, HYBRID, or FUEL mode live.</p>
+                <ul class="mini-tags"><li>ESP8266</li><li>MPU6050</li><li>Flask</li><li>Random Forest</li></ul>
+              </div>
+              <div class="flip-back">
+                <h3>How it works</h3>
+                <p>An ESP8266 with an MPU6050 and a throttle input feeds a Flask Random Forest model. It classifies driving as ECO, NORMAL, HILL, or AGGRESSIVE and selects the power mode, shown on a live dashboard.</p>
+                <a class="card-link" href="https://github.com/THICHANAMOORTHY?tab=repositories&amp;q=powertrain" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card reveal" data-category="ai iot web" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="badge badge-ai">AI + IoT</span>
+                <i class="fa-solid fa-seedling proj-icon"></i>
+                <h3>AGROSENSE 360°</h3>
+                <p>Bilingual English/Tamil farm intelligence app with a soil-scouting rover.</p>
+                <ul class="mini-tags"><li>React</li><li>Firebase</li><li>ESP32</li></ul>
+              </div>
+              <div class="flip-back">
+                <h3>How it works</h3>
+                <p>A React and Firebase app is paired with an ESP32 "Soil Scout" rover that estimates NPK from moisture, pH, and TDS readings.</p>
+                <a class="card-link" href="https://github.com/THICHANAMOORTHY?tab=repositories&amp;q=agro" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+          <article class="flip-card reveal" data-category="vlsi" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="badge badge-vlsi">VLSI</span>
+                <i class="fa-solid fa-border-all proj-icon"></i>
+                <h3>FPGA Sobel Edge Detection Accelerator</h3>
+                <p>Streaming Sobel pipeline on Artix-7. About 94% pixel match against OpenCV.</p>
+                <ul class="mini-tags"><li>Verilog</li><li>Artix-7</li><li>UART</li><li>OpenCV</li></ul>
+              </div>
+              <div class="flip-back">
+                <h3>How it works</h3>
+                <p>Line buffers stream the image so no full-frame storage is needed. The datapath uses shift-and-add only, with no DSP blocks. Images travel over UART and results are checked against an OpenCV reference.</p>
+                <a class="card-link" href="https://github.com/THICHANAMOORTHY?tab=repositories&amp;q=sobel" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card reveal" data-category="vlsi ai" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="badge badge-vlsi">VLSI capstone</span>
+                <i class="fa-solid fa-tower-broadcast proj-icon"></i>
+                <h3>K-Best MIMO Detector</h3>
+                <p>2×2, 16-QAM detector with pre-screening and simplified sorting.</p>
+                <ul class="mini-tags"><li>CORDIC QR</li><li>Artix-7</li><li>IEEE paper</li></ul>
+              </div>
+              <div class="flip-back">
+                <h3>How it works</h3>
+                <p>The adaptive variant uses CORDIC-based QR decomposition and AI-assisted dynamic K selection. It runs on Artix-7 with UART output, and the work is written up as an IEEE-style paper.</p>
+                <a class="card-link" href="https://github.com/THICHANAMOORTHY?tab=repositories&amp;q=mimo" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card reveal" data-category="vlsi" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="badge badge-vlsi">VLSI</span>
+                <i class="fa-solid fa-wave-square proj-icon"></i>
+                <h3>Unified FPGA Digital Modulator</h3>
+                <p>ASK, BPSK, QPSK and FSK on one shared DDS datapath.</p>
+                <ul class="mini-tags"><li>DDS</li><li>Verilog</li><li>Modulation</li></ul>
+              </div>
+              <div class="flip-back">
+                <h3>How it works</h3>
+                <p>A single direct digital synthesis core generates the carrier. Each scheme only changes the phase, frequency, or amplitude control words, which keeps resource use low.</p>
+                <a class="card-link" href="https://github.com/THICHANAMOORTHY?tab=repositories&amp;q=modulator" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card reveal" data-category="vlsi" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="badge badge-vlsi">VLSI</span>
+                <i class="fa-solid fa-image proj-icon"></i>
+                <h3>FPGA Image Watermarking System</h3>
+                <p>Drives an ILI9341 TFT over an 8080 parallel interface.</p>
+                <ul class="mini-tags"><li>ILI9341</li><li>8080 bus</li><li>Python verification</li></ul>
+              </div>
+              <div class="flip-back">
+                <h3>How it works</h3>
+                <p>The FPGA embeds a watermark into image data and pushes pixels to the ILI9341 display over its 8080 parallel bus. Python scripts verify the output against a software model.</p>
+                <a class="card-link" href="https://github.com/THICHANAMOORTHY?tab=repositories&amp;q=watermark" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card reveal" data-category="vlsi" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="badge badge-vlsi">Internship</span>
+                <i class="fa-solid fa-right-left proj-icon"></i>
+                <h3>UART Transmitter on FPGA</h3>
+                <p>Built during the Silicon Craft VLSI internship.</p>
+                <ul class="mini-tags"><li>UART</li><li>FSM</li><li>Baud generator</li></ul>
+              </div>
+              <div class="flip-back">
+                <h3>How it works</h3>
+                <p>An FSM serialises start, data, and stop bits, timed by a baud-rate generator. It was simulated with a self-checking testbench before bring-up on the board.</p>
+                <a class="card-link" href="https://github.com/THICHANAMOORTHY?tab=repositories&amp;q=uart" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card reveal" data-category="web iot" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="badge badge-web">Web + IoT · SIH26022</span>
+                <i class="fa-solid fa-sun proj-icon"></i>
+                <h3>Dhoop Track</h3>
+                <p>Solar drying and packaging tracker for rural agarbatti artisans.</p>
+                <ul class="mini-tags"><li>React</li><li>Vite</li><li>Tailwind</li><li>Node</li><li>SQLite</li></ul>
+              </div>
+              <div class="flip-back">
+                <h3>How it works</h3>
+                <p>Artisans log each batch through drying and packaging. Every batch gets a QR label, so its history can be traced by scanning.</p>
+                <a class="card-link" href="https://github.com/THICHANAMOORTHY?tab=repositories&amp;q=dhoop" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card reveal" data-category="web" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="badge badge-web">Web</span>
+                <i class="fa-solid fa-building-columns proj-icon"></i>
+                <h3>ECE ELITES Department Website</h3>
+                <p>Website for the ECE department.</p>
+                <ul class="mini-tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              </div>
+              <div class="flip-back">
+                <h3>Repository</h3>
+                <p>The department website, maintained in the dept_web repository.</p>
+                <a class="card-link" href="https://github.com/THICHANAMOORTHY/dept_web" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="more-builds reveal">
+          <span class="mono">// also built at hackathons:</span>
+          <span class="chip-tag">CropSmart</span>
+          <span class="chip-tag">Circula</span>
+          <span class="chip-tag">EV Energy Management System</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== ACHIEVEMENTS ========== -->
+    <section class="section section-alt" id="achievements">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">04.</span> Awards &amp; Achievements</h2>
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <span class="tl-dot"><i class="fa-solid fa-microchip"></i></span>
+            <div class="tl-card"><span class="tl-date mono">May 2026</span><h3>VLSI Design Intern, Silicon Craft VLSI</h3><p>RTL design, VLSI flow and verification. Designed and simulated a UART transmitter on FPGA in Verilog.</p></div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot"><i class="fa-solid fa-wifi"></i></span>
+            <div class="tl-card"><span class="tl-date mono">June 2026</span><h3>Embedded Systems IoT Intern, Emertxe Information Technologies</h3><p>Built an EV dashboard for real-time vehicle monitoring with sensor interfacing and ADAS-oriented warnings.</p></div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot"><i class="fa-solid fa-bolt"></i></span>
+            <div class="tl-card"><span class="tl-date mono">Aug 2026</span><h3>Advanced EV Manufacturing Skilling Programme</h3><p>120 hours of theory and practicals: EV architecture, BMS, manufacturing and quality, automotive standards. GTT Foundation, supported by Accenture.</p></div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot"><i class="fa-solid fa-file-lines"></i></span>
+            <div class="tl-card"><h3>IEEE-style paper: Smart Foldable Aluminium Axillary Crutch</h3><p>Student paper contest at Vel Tech, Avadi.</p></div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot"><i class="fa-solid fa-flag"></i></span>
+            <div class="tl-card"><h3>Smart India Hackathon 2026</h3><p>Participant, SIH26022 (EV charging ideation).</p></div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot"><i class="fa-solid fa-people-group"></i></span>
+            <div class="tl-card"><span class="tl-date mono">2024 – present</span><h3>Co-Chair, YUVA Club</h3><p>Entrepreneurship Development Cell. Coordinated workshops, seminars and student events, and led volunteer teams. Attended 30+ technical workshops and events.</p></div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot"><i class="fa-solid fa-certificate"></i></span>
+            <div class="tl-card"><h3>NPTEL Certifications</h3><p>Internet of Things (score 70) and Industrial Internet of Things (score 57).</p></div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot"><i class="fa-brands fa-github"></i></span>
+            <div class="tl-card"><h3>GitHub Achievements</h3><p>Pull Shark and YOLO.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== GITHUB ========== -->
+    <section class="section" id="github">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">05.</span> GitHub Project Work</h2>
+        <p class="section-lead reveal">
+          Loaded live from
+          <a href="https://github.com/THICHANAMOORTHY" target="_blank" rel="noopener">github.com/THICHANAMOORTHY</a>
+          through the GitHub REST API. <span class="mono" id="gh-status">fetching…</span>
+        </p>
+
+        <a class="hdlbits-card reveal" href="https://github.com/THICHANAMOORTHY?tab=repositories&amp;q=hdlbits" target="_blank" rel="noopener">
+          <div class="hdlbits-icon"><i class="fa-solid fa-code-branch"></i></div>
+          <div>
+            <h3>HDLBits Practice</h3>
+            <p>My Verilog solutions to the HDLBits problem set, covering gates, muxes, FSMs, counters, and shift registers.</p>
+          </div>
+          <i class="fa-solid fa-arrow-right hdlbits-arrow"></i>
+        </a>
+
+        <div class="repo-grid" id="repo-grid" aria-live="polite"></div>
+
+        <div class="center">
+          <a href="https://github.com/THICHANAMOORTHY?tab=repositories" class="btn btn-ghost" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i> See all repositories
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== INTERESTS ========== -->
+    <section class="section section-alt" id="interests">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">06.</span> Interests</h2>
+        <ul class="interests-grid">
+          <li class="interest reveal"><i class="fa-solid fa-gears"></i><span>Animatronics &amp; kinetic sculptures</span></li>
+          <li class="interest reveal"><i class="fa-solid fa-chart-line"></i><span>Stock market &amp; mutual funds</span></li>
+          <li class="interest reveal"><i class="fa-solid fa-robot"></i><span>Hardware tinkering &amp; robotics</span></li>
+          <li class="interest reveal"><i class="fa-solid fa-lightbulb"></i><span>Entrepreneurship (YUVA Club)</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">07.</span> Contact Me</h2>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p>Open to embedded systems and FPGA fresher roles, internships, and collaborations. Drop a message and I'll get back to you.</p>
+            <ul class="contact-list">
+              <li><a id="contact-email" href="mailto:thichu683@gmail.com"><i class="fa-solid fa-envelope"></i><span>thichu683@gmail.com</span></a></li>
+              <li><a id="contact-phone" href="tel:+916374742431"><i class="fa-solid fa-phone"></i><span>+91 6374742431</span></a></li>
+              <li><a id="contact-linkedin" href="https://www.linkedin.com/in/thichanamoorthy-t-2371a5325" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a></li>
+              <li><a href="https://github.com/THICHANAMOORTHY" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><span>GitHub</span></a></li>
+              <li><span class="contact-static"><i class="fa-solid fa-location-dot"></i><span>Coimbatore, Tamil Nadu</span></span></li>
+            </ul>
+          </div>
+
+          <!-- Formspree: replace YOUR_FORM_ID with the ID from formspree.io -->
+          <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            <p class="form-status mono" id="form-status" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="mono">&copy; <span id="year"></span> Thichanamoorthy T · Built with HTML, CSS &amp; JavaScript</p>
+      <a href="#top" class="mono back-top">back to top <i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script type="module" src="js/hero3d.js"></script>
+</body>
+</html>
